@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Registration Form</title>
+    <title>Mess Registration Form</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="title">
-            Registration Form
+            Mess Registration Form
         </div>
-        <div class="form">
-            <div class="inputfield">
-                <label>First Name</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputfield">
-                <label>Last Name</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputfield">
-                <label>Password</label>
-                <input type="password" class="input">
-            </div>
-            <div class="inputfield">
-                <label>Confirm Password</label>
-                <input type="password" class="input">
-            </div>
-            <div class="inputfield">
-                <label>Gender</label>
-                <div class="custom_select">
-                    <select>
-                        <option value="">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
+        <form action="https://script.google.com/macros/s/AKfycbzb1XUTewP18TzmQJI1qZt_nTn3ELA3XeLCPOXR8gwLSWjePkGUYurlCb7CMIi7ZIRE7g/exec" method="post">
+            <div class="form">
+                <div class="inputfield">
+                    <label>Name</label>
+                    <input type="text" class="input" name="name" required>
+                </div>
+                <div class="inputfield">
+                    <label>Gender</label>
+                    <input type="text" class="input" placeholder="Male or Female" name="gender" required>
+                </div>
+                <div class="inputfield">
+                    <label>Email Address</label>
+                    <input type="text" class="input" name="email" required>
+                </div>
+                <div class="inputfield">
+                    <label>Branch</label>
+                    <input type="text" class="input" name="batch" required>
+                </div>
+                <div class="inputfield">
+                    <label>Phone Number</label>
+                    <input type="tel" class="input" name="phone" required>
+                </div>
+                <div class="inputfield">
+                    <label>Hostelite</label>
+                    <input type="text" class="input" placeholder="Yes or No" name="hostel" required>
+                </div>
+
+                <div class="inputfield">
+                    <label>Room Number</label>
+                    <input type="text" class="input" name="room">
+                </div>
+                <div class="inputfield">
+                    <label>Address</label>
+                    <textarea class="textarea" name="address" ></textarea>
+                </div>
+                <div class="inputfield terms">
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Register" class="btn">
                 </div>
             </div>
-            <div class="inputfield">
-                <label>Email Address</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputfield">
-                <label>Phone Number</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputfield">
-                <label>Address</label>
-                <textarea class="textarea"></textarea>
-            </div>
-            <div class="inputfield">
-                <label>Postal Code</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputfield terms">
-                <label class="check">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <p>Agreed to terms and conditions</p>
-            </div>
-            <div class="inputfield">
-                <input type="submit" value="Register" class="btn">
-            </div>
-        </div>
+        </form>
+
     </div>
 </body>
 </html>
